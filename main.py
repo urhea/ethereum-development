@@ -2,7 +2,7 @@
 import argparse
 from binance.client import Client
 from config import api_key, api_secret
-#user ID
+#enter user ID 
 client = Client("api_key", "api_secret")
 
 parser = argparse.ArgumentParser()
@@ -12,8 +12,8 @@ args = vars(parser`.parse_args())
 def main():
 
     check_fee()
-    #market_depth()
-    #
+    #market_depth() check
+    
 
 def market_depth():
     depth = client.get_order_book(symbol=args['symbol'])
@@ -24,6 +24,5 @@ def check_fee():
     print(current_info)
 
 
-
-
-main()
+def 
+########
